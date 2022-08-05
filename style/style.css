@@ -1,0 +1,664 @@
+* {
+    margin: 0;
+}
+
+body {
+    position: relative;
+    z-index: -2000;
+}
+
+                                    /* header */
+
+#banniere {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 200px;
+    width: 100%;
+
+    background-color: #232B42;
+
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.488);
+
+    z-index: 100;
+    position: relative;
+}
+                                    
+                                        
+.banniere {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 95%;
+}
+
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 170px;
+    width: 20%;
+    
+}
+
+.photo img {
+    height: 100%;
+    width: auto;
+}
+     
+.nom {
+    height: 100px;
+    width: 30%;
+}
+
+.nom h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    color: #C9C9C9;
+    font-family:'Teko', sans-serif;
+    font-size: 450%;
+    font-weight: 500;
+
+    height: 100%;
+    width: 100%;
+}
+
+
+.naissance {
+    height: 100px;
+    width: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    color: #C9C9C9;
+    font-family:'Teko', sans-serif;
+    font-size: 300%;
+    font-weight: 400;
+}
+
+                                      
+                                    /* fin header */
+
+
+                                    /* footer */
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 200px;
+    width: 100%;
+
+    background-color: #232B42;
+
+    box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.488);
+
+    z-index: 100;
+    position: relative;
+}
+                                    
+                                        
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 95%;
+}          
+       
+
+.adresse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+    width: 20%;
+
+    color: #C9C9C9;
+    font-family:'Teko', sans-serif;
+    font-size: 200%;
+    font-weight: 400;
+}
+     
+.telephone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+    width: 20%;
+    
+    color: #C9C9C9;
+    font-family:'Teko', sans-serif;
+    font-size: 200%;
+    font-weight: 400;
+}
+
+.mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+    width: 20%;
+
+    color: #C9C9C9;
+    font-family:'Teko', sans-serif;
+    font-size: 200%;
+    font-weight: 400;
+}
+
+.permis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+    width: 20%;
+
+    color: #C9C9C9;
+    font-family:'Teko', sans-serif;
+    font-size: 200%;
+    font-weight: 400;
+}
+
+
+
+                                    /* fin footer */                                    
+
+
+                                    /* contenu */
+
+#page {
+    display: flex;
+    
+    height: 1800px;
+    z-index: -200;
+
+    
+
+    position: relative;
+}
+
+#page::before {
+    
+    content: "";
+    
+    background-image: url("../img/plans-g60002f7ea_1920.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+    background-attachment: fixed;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.1;
+   
+    z-index: -50;
+    
+}
+
+
+
+
+
+
+                        /* barre latérale */
+
+
+.onclick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+    width: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: -1;
+    position: absolute;
+    top: 450px;
+}
+
+.sidenav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 150px;
+
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+   /* Stay in place */
+  z-index: 0;
+  top: 0;
+  left: 0;
+  background-color: #00485B; 
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: relative;
+  bottom: 50px;
+  left: 160px;
+  font-size: 60px;
+  margin-bottom: 50px;
+  color: #C9C9C9;
+}
+
+
+
+
+
+button {
+    -webkit-appearance: none;
+    background: transparent;
+    border: 0;
+    outline:0;
+  }
+  
+  svg {
+    padding: 5px;
+    
+  }
+  
+  .arrow {
+    cursor: pointer;
+    
+    width: 70px;
+    height: 90px;
+  }
+
+  .right {
+    left: 58%;
+    
+  }
+
+.right:hover polyline,
+.right:focus polyline {
+  stroke-width: 8;
+  
+  
+}
+
+.right:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+
+}
+
+polyline {
+  transition: all 250ms ease-in-out;
+  
+}
+
+
+
+
+
+                            /* contenu latéral */
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    position: relative;
+    top: 150px;
+    width: 50%;
+    height: 100px;
+
+    margin-bottom: 400px;
+  }
+
+  .langues {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    position: relative;
+
+    width: 100%;
+    height: 50px;
+
+    
+  }
+
+  
+  .langue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    height: 50px;
+
+    background-color: #232B42;
+
+    margin: 0;
+
+    color: #C9C9C9;
+    font-family:'Teko', sans-serif;
+    font-size: 200%;
+    font-weight: 400;
+
+    margin-bottom: 50px;
+  }
+
+  .hob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    height: 50px;
+
+    background-color: #232B42;
+
+    margin: 0;
+
+    color: #C9C9C9;
+    font-family:'Teko', sans-serif;
+    font-size: 200%;
+    font-weight: 400;
+
+    margin-bottom: 0px;
+  }
+  
+  .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+
+  
+  
+  .langues:hover .lang {
+    bottom: 0;
+    height: 250%;
+  }
+  
+  .langues:hover .hobby {
+    bottom: 0;
+    height: 550%;
+  }
+
+  .lan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    width: 400px;
+    height: 100%;
+  }
+
+
+  .lan ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    width: 50%;
+    height: 50%;
+
+    
+  }
+
+  .lan ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    width: 100%;
+    height: 100%;
+
+    margin-right: 40px;
+
+    color: #C9C9C9;
+    font-family:'Teko', sans-serif;
+    font-size: 190%;
+    font-weight: 300;
+  }
+
+  
+  .hobbies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    width: 400px;
+    height: 100%;
+  }
+
+  .hobbies ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    width: 50%;
+    height: 50%;
+
+  }
+
+  .hobbies ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    width: 100%;
+    height: 50%;
+
+    margin-right: 40px;
+
+    color: #C9C9C9;
+    font-family:'Teko', sans-serif;
+    font-size: 190%;
+    font-weight: 300;
+
+  }
+
+                        
+                        /* fin contenu latéral */
+
+
+                        /* fin barre latérale */
+
+
+
+
+                        /* page */
+
+
+#contenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+    height: 100%;
+    width: 100%;                        
+    
+    position: relative;  
+    z-index: -10;
+    padding-left: 100px;
+    
+}                            
+                        
+
+
+
+
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    
+padding-bottom: 400px;
+    width: 3000px;
+    height: 100px;
+    
+  }
+
+  .experience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    position: relative;
+
+    width: 100%;
+    height: 50px;
+
+    
+  }
+
+  
+  .exp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 50px;
+
+    background-color: #232B42;
+
+    margin: 0;
+
+    color: #C9C9C9;
+    font-family:'Teko', sans-serif;
+    font-size: 200%;
+    font-weight: 400;
+
+    margin-bottom: 50px;
+  }
+  
+  .zone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+
+  
+  
+  .experience:hover .zone {
+    bottom: 0;
+    height: 1000%;
+  }
+  
+  .comp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    background-color: #232B42;
+
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+
+                        /* fin page */
+
+
+
+                        /* fin contenu */
